@@ -1,0 +1,287 @@
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Add your existing CSS rules here */
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the footer sticks to the bottom */
+}
+
+marquee {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #fff8dc;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #fff8dc, #f0e68c);
+    border-bottom: 2px solid #ddd;
+    padding: 0px 10px;
+}
+
+.heading {
+    font-size: 50px;
+    /* Increased size */
+    margin: 0;
+    white-space: nowrap;
+    /* Prevents wrapping */
+    color: burlywood;
+    /* Class X-A color */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#datetime {
+    margin: 0;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    justify-content: space-between;
+    /* Align items to the sides */
+    gap: 20%;
+    /* Space between logo, heading, and CCA icon */
+}
+
+header nav img {
+    height: 80%;
+    /* Increase logo size */
+    width: 80%;
+    border-radius: 50%;
+    /* Makes the logo circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow to the logo */
+    margin-top: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header nav img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.heading:hover {
+    transform: scale(1.2);
+    text-transform: uppercase;
+}
+
+main {
+    padding: 20px;
+    background-image: url(assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    flex: 1;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    color: #0047ab;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li,
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', Arial, sans-serif;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    background-color: #0047ab;
+    color: white;
+}
+
+a {
+    color: #0047ab;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    background-color: gold;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #fff8dc;
+    /* Matches header background */
+    color: #333;
+    padding: 0px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+footer:hover {
+    text-transform: uppercase;
+    box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div:first-child {
+    padding-left: 5%;
+}
+
+footer div:last-child {
+    padding-right: 5%;
+    display: inline-block;
+}
+
+footer b {
+    font-size: 15px;
+}
+
+footer a {
+    color: #0047ab;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: orangered;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+
+.file-icon {
+    font-size: 24px;
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.file-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.file-description {
+    font-size: 12px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.file-download {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.file-download:hover {
+    background-color: #0047ab;
+    color: white;
+    text-decoration: none;
+}
+
+.fa.fa-download {
+    font-size: 18px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
